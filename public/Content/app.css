@@ -1,1 +1,30 @@
 /* custom css */
+body {
+    background-color: #eeeeee;
+}
+
+.bg-dark{
+    background-color: #4c5b61 !important;
+}
+
+.fa-home, .fa-user, .fa-wrench, .fa-info, .fa-phone{
+    margin: 0px 10px 0px 10px;
+    align-items: center;
+}
+
+.nav-item{    
+    border-left: 3px solid #cfd8dc;
+    border-radius: 5px;
+    height: 20px;
+    margin: 10px 10px 10px 0px;
+    height:40px
+}
+
+.jumbotron{
+    background-color: #7f96a0;
+    color: white;
+}
+
+body{
+    height: 100%;
+}

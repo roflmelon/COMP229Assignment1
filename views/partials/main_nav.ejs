@@ -1,58 +1,76 @@
   <!-- main navigation -->
   <!-- for navbar bg theme dark/light -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Harry's Portfolio</a>
+    <a class="navbar-brand" href="/"><img src="/Assets/images/icon.jpg" style="width:60px"></a>
   <!-- for collapsable navbar on mobile device -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <!-- making navbar collasable -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <!-- margin settings -->
       <ul class="navbar-nav ml-auto">
         
+        <!-- vertical dividers -->
+        <div class="vl">
+          <!-- nav-item "active" means the link is highlighted/bright, this is also with ejs syntax-->
+          <% if((title=="Welcome to Harry\'s Website") || (title=="Home")){%>
+          <li class="nav-item active">
+          <% } else { %>
+          <li class="nav-item">
+          <% } %>
+            <!-- i class is for font awesome and has to be between the tags -->
+            <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home </a>
+          </li>
+        </div>
         
-        <!-- nav-item "active" means the link is highlighted/bright, this is also with ejs syntax-->
-        <% if((title=="Home") || (title=="Home")){%>
-        <li class="nav-item active">
-        <% } else { %>
-        <li class="nav-item">
-        <% } %>
-          <!-- i class is for font awesome and has to be between the tags -->
-          <a class="nav-link" href="/home"><i class="fas fa-lg fa-home"></i> Home </a>
-        </li>
 
-        <% if(title=="About Me"){%>
-          <li class="nav-item active">
-          <% } else { %>
-          <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/about"><i class="fas fa-lg fa-user-circle"></i> About Me </a>
-        </li>
+        <!-- vertical dividers -->
+        <div class="vl">
+          <% if(title=="About Me"){%>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+            <a class="nav-link" href="/about"><i class="fas fa-user"></i> About Me </a>
+          </li>
+        </div>
 
-        <% if(title=="Skill"){%>
-          <li class="nav-item active">
-          <% } else { %>
-          <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/skill"><i class="fas fa-lg fa-tools"></i> My Skills </a>
-        </li>
 
-        <% if(title=="Services I Provide"){%>
-          <li class="nav-item active">
-          <% } else { %>
-          <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/services"><i class="fas fa-lg fa-info"></i> Services </a>
-        </li>
+        <!-- vertical dividers -->
+        <div class="vl">
+          <% if(title=="My Projects"){%>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+            <a class="nav-link" href="/projects"><i class="fas fa-wrench"></i> My Projects </a>
+          </li>
+        </div>
 
-        <% if(title=="Contact Me"){%>
-          <li class="nav-item active">
-          <% } else { %>
-          <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/contact"><i class="fas fa-lg fa-phone-square-alt"></i> Contact Me </a>
-        </li>
+
+        <!-- vertical dividers -->
+        <div class="vl">
+          <% if(title=="Services"){%>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+            <a class="nav-link" href="/services"><i class="fas fa-info"></i> Services </a>
+          </li>
+        </div>
+
+
+        <!-- vertical dividers -->
+        <div class="vl">
+          <% if(title=="Contact Me"){%>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+            <a class="nav-link" href="/contact"><i class="fas fa-phone"></i> Contact Me </a>
+          </li>
+        </div>
 
     </div>
   </nav>
