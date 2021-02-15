@@ -1,6 +1,9 @@
 /* custom css */
 body {
     background-color: #eeeeee;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
 .bg-dark{
@@ -21,10 +24,23 @@ body {
 }
 
 .jumbotron{
-    background-color: #7f96a0;
+    background-color: rgba(83, 83, 83, 0.8);
     color: white;
 }
 
-body{
-    height: 100%;
+.title-page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.display-4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-bottom{
+    padding-bottom: 100px;
 }
